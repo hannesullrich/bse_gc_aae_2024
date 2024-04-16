@@ -4,7 +4,7 @@
 
 ### Course organization
 
-- The course takes place on Fridays (in general), 9:00 - 12:00 at DIW Berlin (Room Popper, 2.3.020).
+- The course takes place on Fridays (unless noted otherwise), 9:00 - 12:00 at DIW Berlin (Room Popper, 2.3.020).
 - All material can be found here: https://github.com/hannesullrich/bse_gc_aae_2024
 - PhD: Credit points: 9 ECTS
 - Master: Credit points: 6 ECTS
@@ -15,20 +15,16 @@
 - PhD Evaluation: if this course is taken for credits, the final grade will be determined by
     - 3 problem sets (to be completed in groups of max. 2 participants), weighted 1/4 each,
     - a final exam, weighted 1/4.
-- Master Evaluation: TBC
-    - 2 problem sets out of 3 (to be completed in groups of max. 2 participants)
-    - a final exam, weighted 1/1
+- Master Evaluation: 
+    - 2 problem sets out of 3 (to be completed in groups of max. 2 participants), compulsory but not graded,
+    - a final exam, weighted 1/1.
 
 ### Course objectives
 
 - Discuss central methods and current advances in applied econometrics.
-- Provide insights into empirical strategies (especially, identification) in important papers in the Labour,
-    Public & IO literatures.
-- Discuss in-depth a variety of econometric frameworks and their core assumptions for causal and
-    counterfactual analysis. Give students an understanding of why and when adding structure informed
-    by economic theory can be important.
-- Establish basic estimation techniques & numerical methods such as simulation and numerical inte-
-    gration.
+- Provide insights into empirical strategies (especially, identification) in important papers in the Labour, Public & IO literatures.
+- Discuss in-depth a variety of econometric frameworks and their core assumptions for causal analysis. Give students an understanding of why and when adding structure informed by economic theory is important.
+- Establish basic estimation techniques & numerical methods such as simulation and numerical integration.
 
 
 
@@ -167,7 +163,7 @@ ference”**, https://mixtape.scunning.com/04-potential_outcomes#randomization-i
 
 ### 6 Introduction: econometric modeling of economic choices / Python coding (June 7, PH and MB)
 
-- **Methodology fights** Angrist and Pischke (2010), Frijters (2013), Halle (2022), Heckman (2010), Keane (2010), Rust (2010), Rust (2014), Wolpin (2013)
+- **Methodology fights** Angrist and Pischke (2010), Frijters (2013), Haile (2022), Heckman (2010), Keane (2010), Rust (2010), Rust (2014), Wolpin (2013)
 - **Basics discrete choice** van Soest (1995), Train (2009)
 
 #### References
@@ -235,13 +231,13 @@ ference”**, https://mixtape.scunning.com/04-potential_outcomes#randomization-i
 #### References
 - Magnac, Thierry and David Thesmar (2002), “Identifying dynamic discrete decision processes,” *Econometrica* 70 (2), 801-816.
 
-- Rust, John (1987), “Optimal replacement of GMC bus engines: An empirical model of Harold Zurcher,” *Econometrica* 55, 999-1033.
+- **Rust, John (1987), “Optimal replacement of GMC bus engines: An empirical model of Harold Zurcher,” *Econometrica* 55, 999-1033.**
 
-- Rust, John (1994), Structural estimation of Markov decision processes, In R. Engle and D. McFadden (Eds.), *Handbook of Econometrics* 4, 3081-3143, North-Holland. Amsterdam.
+- **Rust, John (1994), Structural estimation of Markov decision processes, In R. Engle and D. McFadden (Eds.), *Handbook of Econometrics* 4, 3081-3143, North-Holland. Amsterdam.**
 
 
 
-### 10 Dynamic discrete choice (July 5, PH and MB)
+### 10 Dynamic discrete choice in Labour (July 5, PH and MB)
 
 - Dynamic incentives to labour supply: investing in human capital
 - More on Discretisation
@@ -255,7 +251,7 @@ ference”**, https://mixtape.scunning.com/04-potential_outcomes#randomization-i
 
 
 
-### 11 Dynamic discrete choice in Labour II (July 12, PH and MB)
+### 11 Dynamic discrete choice in Labour (July 12, PH and MB)
 
 - Dynamic incentives to labour supply: the role of education, full time and part time experience
 - Identification and validation of structural parameters
