@@ -17,7 +17,7 @@
     - a final exam, weighted 1/4.
 - Master Evaluation: TBC
     - 2 problem sets out of 3 (to be completed in groups of max. 2 participants)
-    - a final exam, weighted 1/3.
+    - a final exam, weighted 1/1
 
 ### Course objectives
 
