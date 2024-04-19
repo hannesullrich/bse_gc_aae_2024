@@ -1,0 +1,143 @@
+{smcl}
+{* *! version 1.2  12sep2012}{...}
+{cmd:help reganat}{right: ({browse "http://www.stata-journal.com/article.html?article=st0285":SJ13-1: st0285})}
+{hline}
+
+{title:Title}
+
+{p2colset 5 16 18 2}{...}
+{p2col :{hi:reganat} {hline 2}}Graphical inspection of linear multivariate models{p_end}
+{p2colreset}{...}
+
+
+{title:Syntax}
+
+{p 8 14 2}
+{cmd:reganat}
+{depvar}
+{varlist}
+{ifin}
+[{cmd:,} {it:options}]
+
+{synoptset 23}{...}
+{synopthdr}
+{synoptline}
+{synopt :{opt d:is(varlist)}}graph only the variables in {it:varlist} and omit the rest{p_end}
+{synopt :{opt l:abel(varname)}}use {it:varname} to label observations in the scatterplot{p_end}
+{synopt :{opt bis:cat}}plot a scatterplot for the bivariate linear model{p_end}
+{synopt :{opt bil:ine}}plot a regression line for the bivariate linear model{p_end}
+{synopt :{opt r:eg}}display results for estimation of the multivariate model{p_end}
+{synopt :{opt nol:egend}}prevent legend from being displayed{p_end}
+{synopt :{opt noc:ovlist}}prevent list of covariates from being displayed{p_end}
+{synopt :{opt f:wl}}use Frisch-Waugh-Lovell formulation in place of regression anatomy{p_end}
+{synopt :{opt sem:ip}}add a table with a decomposition of the model's variance{p_end}
+{synopt :{opt s:cheme(graphical_scheme)}}specify graphical scheme{p_end}
+{synoptline}
+{p2colreset}{...}
+
+
+{title:Description}
+
+{pstd}{cmd:reganat} is a graphical tool for inspecting the effect of a
+covariate on a dependent variable in the context of multivariate
+ordinary least-squares (OLS) estimation.  The name is an acronym for the
+expression "regression anatomy", a result in OLS algebra originally due
+to Frisch and Waugh (1933) and recently revived by Angrist and Pischke's
+{it:Mostly Harmless Econometrics} (2009).
+
+{pstd}In a bivariate regression model, Y = bx1 + g, the graphical
+inspection of the scatterplot provides useful information on the
+relation between the independent variable x1 and the dependent variable
+Y; but the inspection can be highly misleading when the underlying real
+model is multivariate of the type Y = X'B + e, where X' also includes
+x1.  In general, the OLS multivariate estimator is not equivalent to an
+OLS estimator obtained using a separate regression on each independent
+variable because correlation among independent variables must be
+accounted for.  Angrist and Pischke (2009) show that in a multivariable
+model, the regression parameter for a given regressor is the bivariate
+slope coefficient for the corresponding regressor after partialling out
+all other covariates.  Accordingly, {cmd:reganat} displays a table of
+scatterplots, with the dependent variable plotted against the
+independent variable free of any linear correlation with the other
+independent variables.  This combined graph can be helpful when
+inspecting the data for outliers, nonlinearities, and other modeling
+issues.
+
+
+{title:Options}
+
+{phang}{opt dis(varlist)} restricts the output to the variables in
+{it:varlist} and excludes the rest.  Only the specified {it:varlist}
+will be graphed; nonetheless, the other regressors will be used in the
+background calculations.
+
+{phang}{opt label(varname)} uses {it:varname} to label the
+observations in the scatterplot.
+
+{phang}{opt biscat} specifies that on the graph will also be displayed
+the scatterplot for (Y,x1), where x1 is the variable of interest.
+
+{phang}{opt biline} adds to each subgraph a regression line calculated
+over the univariate model in which the dependent variable is regressed
+only on the regressor under study.  To distinguish the two regression
+lines that appear on the same graph, {cmd:biline} uses a dashed pattern
+for the one for the univariate model.
+
+{phang}{opt reg} displays the output of the regression command for the
+complete model.
+
+{phang}{opt nolegend} prevents the legend from being displayed.
+
+{phang}{opt nocovlist} prevents the list of covariates from being
+displayed.
+
+{phang}{cmd:fwl} uses the Frisch-Waugh-Lovell formulation in place of
+regression anatomy.
+
+{phang}{cmd:semip} adds a table with a decomposition of the model's
+variance.
+
+{phang}{opt scheme(graphical_scheme)} specifies the graphical scheme to
+be applied to the composite graph.  The default is {cmd:scheme(sj)}.
+
+
+{title:Examples}
+
+{pstd}Setup{p_end}
+{phang2}{cmd:. sysuse auto}{p_end}
+
+{pstd}Obtain a combined graph of the effect of several regressors{p_end}
+{phang2}{cmd:. reganat price length weight headroom mpg}{p_end}
+
+{pstd}Obtain a combined graph of the effect of a subset of the
+regressors, along with scatterplots and fitted line for the univariate
+models{p_end}
+{phang2}{cmd:. reganat price length weight headroom mpg, dis(weight length) biline}{p_end}
+
+
+{title:Acknowledgment}
+
+{pstd}The author wishes to express his deep gratitude to Joshua Angrist
+for a number of insights and comments that have greatly enhanced the
+scope and reliability of this command.
+
+
+{title:References}
+
+{phang}Angrist, J. D., and J.-S. Pischke.  2009.  {it:Mostly Harmless Econometrics: An Empiricist's Companion}.  Princeton, NJ: Princeton University Press.
+
+{phang}Frisch, R., and F. V. Waugh.  1933.  Partial time regressions as compared with individual trends. {it:Econometrica} 1: 387-401.
+
+
+{title:Author}
+
+{pstd}Valerio Filoso{p_end}
+{pstd}Department of Economics{p_end}
+{pstd}University of Naples "Federico II"{p_end}
+{pstd}Naples, Italy{p_end}
+{pstd}filoso@unina.it{p_end}
+
+
+{title:Also see}
+
+{p 4 14 2}Article:  {it:Stata Journal}, volume 13, number 1: {browse "http://www.stata-journal.com/article.html?article=st0285":st0285}{p_end}
