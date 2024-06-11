@@ -192,7 +192,7 @@ ference”**, https://mixtape.scunning.com/04-potential_outcomes#randomization-i
 
 
 
-### 7 Static discrete choice with market-level data (CHANGE OF DATE: June 13, 14:15-17:15, HU)
+### 7 Static discrete choice with market-level data (CHANGE OF DATE: June 13, 14:15-17:15, room Popper, HU)
 
 - Estimating demand and supply parameters in markets with differentiated products using aggregate (product-level) data.
 - Coding exercise: preliminaries.
@@ -209,7 +209,7 @@ ference”**, https://mixtape.scunning.com/04-potential_outcomes#randomization-i
 
 
 
-### 8 Static discrete choice with market-level data (June 21, HU)
+### 8 Static discrete choice with market-level data (June 21, room Popper, HU)
 
 - Recap Berry et al. (1995).
 - Coding exercise: Berry et al. (1995) nested fixed-point (NFP) algorithm.
@@ -223,7 +223,7 @@ ference”**, https://mixtape.scunning.com/04-potential_outcomes#randomization-i
 
 
 
-### 9 Dynamic discrete choice (CHANGE OF DATE: June 26, 14:15-17:15, HU)
+### 9 Dynamic discrete choice (CHANGE OF DATE: June 26, 14:15-17:15, room Popper, HU)
 
 - Introduction to dynamics
 - Estimating a single-agent dynamic discrete choice model: Rust (1987) engine replacement problem
