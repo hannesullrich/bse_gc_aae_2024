@@ -223,7 +223,7 @@ ference”**, https://mixtape.scunning.com/04-potential_outcomes#randomization-i
 
 
 
-### 9 Dynamic discrete choice (CHANGE OF DATE: June 26, 14:15-17:15, room Popper, HU)
+### 9 Dynamic discrete choice (CHANGE OF DATE: June 26, 14:30-17:30, room Popper, HU)
 
 - Introduction to dynamics
 - Estimating a single-agent dynamic discrete choice model: Rust (1987) engine replacement problem
