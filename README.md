@@ -264,3 +264,9 @@ ference”**, https://mixtape.scunning.com/04-potential_outcomes#randomization-i
 
 
 ### Exam (July 19)
+
+
+### FAQ Python (July 30th)
+
+- 14:00 via Zoom
+- Join [here](https://hu-berlin.zoom-x.de/j/66517266951)
